@@ -1,6 +1,6 @@
 var express = require("express");
 
-var router = express.router();
+var router = express.Router();
 
 var burger = require("../models/burger.js");
 
@@ -12,6 +12,7 @@ router.get("/", function (req, res) {
         console.log(burgerData);
         res.render("index", burgerData);
     });
+    res.render("index", {});
 });
 
 router.post("/api/burgers", function(req, res) {
