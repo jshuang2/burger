@@ -12,7 +12,7 @@ router.get("/", function (req, res) {
         console.log(burgerData);
         res.render("index", burgerData);
     });
-    res.render("index", {});
+    // res.render("index", {});
 });
 
 router.post("/api/burgers", function(req, res) {
